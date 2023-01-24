@@ -12,13 +12,29 @@
 
 <body>
     <div class="sidebar">
+        <img src="assets/logo.svg" alt="Greendale School Logo" class="greendale-logo">
         <h1>Greendale Admin</h1>
         <div class="top-nav">
-            <p>Home</p>
-            <p>Profile</p>
-            <p>Messages</p>
-            <p>History</p>
-            <p>Tasks</p>
+            <div class="sidebar-link">
+                <div class="strip"></div>
+                <p>Home</p>
+            </div>
+            <div class="sidebar-link">
+                <div class="strip"></div>
+                <p>Profile</p>
+            </div>
+            <div class="sidebar-link">
+                <div class="strip"></div>
+                <p>Messages</p>
+            </div>
+            <div class="sidebar-link">
+                <div class="strip"></div>
+                <p>History</p>
+            </div>
+            <div class="sidebar-link">
+                <div class="strip"></div>
+                <p>Tasks</p>
+            </div>
         </div>
         <div class="bottom-nav">
             <p>Settings</p>
@@ -30,26 +46,47 @@
     <div class="right-side">
         <div class="header">
             <div class="search-bar">
-                <input type="text" size="20">
+                <img src="assets/magnifying-glass.svg" alt="magnifying glass logo" id="magnifying-glass">
+                <input type="text" size="80">
+            </div>
+            <div class="notifications">
+                <img src="assets/bell-symbol.svg" alt="bell symbol">
             </div>
             <div class="welcome-message">
-                <div class="profile-pic"></div>
-                <h1>Welcome back, Craig Pelton</h1>
+                <div class="profile-pic"> <img src="assets/headshot.jpg" alt="profile picture"></div>
+                <h1><span id="welcome-back-message">Welcome back,</span> <br> CRAIG PELTON</h1>
             </div>
             <div class="nav-buttons">
-                <button class="header-button">Upload</button>
-                <button class="header-button">New</button>
-                <button class="header-button">Share</button>
+                <button class="header-button">UPLOAD</button>
+                <button class="header-button">NEW</button>
+                <button class="header-button">SHARE</button>
             </div>
         </div>
 
         <div class="main-body">
             <div class="section-label">
-                <h1>TO DO:</h1>
+                <h1>TO-DO:</h1>
             </div>
 
             <div class="card-container">
-                
+                <div class="card">
+                    <div class="side-tab">
+                    </div>
+                    <div class="card-content">
+                        <h3>
+                            Fix bulletin board
+                        </h3>
+                        <p>
+                            The bulletin board needs to be put up.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
             </div>
         </div>
     </div>
