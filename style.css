@@ -11,12 +11,12 @@ COLOUR THEME
 
 * {
     border: 1px solid black;
-    box-sizing: border-box;
 }
 
 body,html {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 body {
@@ -79,8 +79,17 @@ button:hover {
     filter: invert();
 }
 
+.greendale-logo:hover {
+    cursor: pointer;
+}
+
+.section-label {
+    display: flex;
+    align-items: center;
+}
+
 .card-container {
-    width: 79%;
+    width: 80%;
     height: 75%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -95,6 +104,16 @@ button:hover {
     border: 1px solid lightgrey;
     border-radius: 15px;
     padding: 15px;
+    overflow: hidden;
+}
+
+.side-tab {
+    background-color: #96B3D9;
+    margin-left: -10px;
+    margin-right: 10px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    padding-bottom: -50px;
 }
 
 .main-body {
@@ -105,10 +124,12 @@ input {
     border-radius: 20px;
     border: none;
     height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 input:focus {
-    border: 1px solid rgb(212, 212, 212);
+    outline: none;
 }
 
 .welcome-message {
@@ -140,8 +161,9 @@ input:focus {
 }
 
 .profile-pic img:hover {
-    width: 75px;
+    transform: scale(1.04, 1.04);
     cursor: pointer;
+    transition: .2s ease;
 }
 
 .notifications {
@@ -164,16 +186,64 @@ input:focus {
     display: grid;
     grid-template-columns: 10px auto;
     padding: 10px;
+    transition: 0.2s ease;
 }
 
-.side-tab {
-    width: 100%;
-    height: 100%;
+.card-text {
+    height: 60%;
+    overflow-y: hidden;
+    font-size: 0.8rem;
 }
+
+ .card:hover {
+    transform: scale(1.02, 1.02);
+    cursor: pointer;
+} 
 
 .card-content {
     background-color: white;
 }
 
+.top-nav {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: -20px;
+    margin-right: -20px;
+}
 
+.sidebar-link {
+    display: flex;
+    transition: .2s ease;
+}
+
+.strip {
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 5px;
+    margin-right: 10px;
+}
+
+.sidebar-link:hover {
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+.sidebar-link:hover .strip {
+    background-color: #297975;
+}
+
+.bottom-nav {
+    margin-top: 50px;
+}
+
+.bottom-nav p {
+    font-size: 1rem;
+}
+
+.bottom-nav p:hover {
+    cursor: pointer;
+    color: rgb(236, 230, 230);
+}
 
