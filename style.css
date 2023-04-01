@@ -9,10 +9,6 @@ COLOUR THEME
 
 */
 
-* {
-    border: 1px solid black;
-}
-
 body,html {
     margin: 0;
     padding: 0;
@@ -84,8 +80,13 @@ button:hover {
 }
 
 .section-label {
+    width: 100%;
     display: flex;
     align-items: center;
+}
+
+.section-label h1 {
+    width: 80%;
 }
 
 .card-container {
@@ -118,6 +119,11 @@ button:hover {
 
 .main-body {
     padding: 40px;
+    width: 100%;
+}
+
+.main-body-left {
+    width: 80%;
 }
 
 input {
